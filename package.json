@@ -16,7 +16,8 @@
     "@vitejs/plugin-react": "^4.0.0"
   }
   "scripts": {
-    "build": "npx vite build", 
-    "dev": "vite"
+  "postinstall": "chmod +x node_modules/.bin/vite", 
+  "build": "vite build",
+  "dev": "vite"
   }
 }
